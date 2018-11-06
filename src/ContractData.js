@@ -57,9 +57,9 @@ class ContractData extends Component {
 
     // If return value is an array
     if (displayData instanceof Array) {
-      const displayListItems = displayData.map((datum, index) => {
+      const displayListItems = displayData.map((datum, index) => (
         <li key={index}>{datum}{pendingSpinner}</li>
-      })
+      ))
 
       return(
         <ul>
